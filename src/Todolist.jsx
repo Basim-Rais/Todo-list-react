@@ -13,7 +13,7 @@ const Todo = () => {
         } else if(inputData && toggleButt){
             setitems(
                 items.map((curElem)=>{
-                    if(curElem.id == editedItem){
+                    if(curElem.id ==+ editedItem){
                         return {...curElem, name : inputData}
                     }
                         return curElem;
@@ -35,7 +35,7 @@ const Todo = () => {
 
     const editItem = (Index) =>{
         const edited_Item = items.find((curElem)=>{
-            return curElem.id == Index
+            return curElem.id === Index
         });
         setinputData(edited_Item.name);
         seteditedItem(Index);
@@ -44,7 +44,7 @@ const Todo = () => {
 
     const delItem =(Index)=>{
         const uptadeItem = items.filter((curElem)=>{
-            return curElem.id != Index;
+            return curElem.id !== Index;
         });
 
         setitems(uptadeItem);
