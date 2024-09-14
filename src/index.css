@@ -1,13 +1,106 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.remove-btn button{
+    padding:13px 20px;
+    border-radius: 6px;
+    background-color: rgb(196, 196, 49);   
+    color: black;
+    font-size: 10px;
+}
+.addItem{
+    position: relative;
+}
+.addItem input{
+    padding: 10px 20px;
+    width: 20rem;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.addItem i{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 900;
+}
+.addItem, .eachitem i:hover{
+    color: rgb(194, 55, 55);
+    cursor: pointer;
+}
+.eachitem{
+    position: relative;
+}
+.eachitem input{
+    padding: 10px 20px;
+    width: 20rem;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.eachitem i{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: #000000;
+}
+.trash{
+    margin: 0px 27px 0px 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body, html {
+    height: 100%;
+    margin: 0;
 }
+
+
+.container {
+    height: auto;
+    overflow: visible;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #101030;
+    margin: 0 auto;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 20px; 
+}
+
+.container h4 {
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.container .todo-Con {
+    width: 300px;
+    background-color: #101030;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.todo-Con .image {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.todo-Con .image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
