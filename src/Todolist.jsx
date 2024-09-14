@@ -13,7 +13,7 @@ const Todo = () => {
         } else if(inputData && toggleButt){
             setitems(
                 items.map((curElem)=>{
-                    if(curElem.id ==+ editedItem){
+                    if(curElem.id === editedItem){
                         return {...curElem, name : inputData}
                     }
                         return curElem;
@@ -88,7 +88,7 @@ const Todo = () => {
 
                     </div>
                     <div className='remove-btn'>
-                        <button role="button" onClick={delAll}>Clear All</button>
+                        <button onClick={delAll}>Clear All</button>
                     </div>
                 </div>
             </div>
